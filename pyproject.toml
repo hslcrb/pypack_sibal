@@ -7,10 +7,11 @@ name = "sibal"
 version = "1.0.0"
 description = "A package that turns Python errors into a state of emergency with rainbow terminal madness and siren sounds."
 authors = [
-    {name = "Rheehose", email = "rheehose@gmail.com"}
+    {name = "Rheehose (Rhee Creative)", email = "rheehose@rheehose.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.7"
+license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -18,7 +19,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rheehose/pypack_sibal"
+Homepage = "https://rheehose.com"
 
 [tool.setuptools.packages.find]
 where = ["src"]

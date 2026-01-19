@@ -32,4 +32,6 @@ print(1 / 0)
 *   이 패키지는 정말로 '씨발' 소리가 절로 나오게 설계되었습니다.
 
 ---
-Created by Rheehose (Rhee Creative)
+Created by Rheehose (Rhee Creative)  
+Copyright (c) 2008-2026 Rheehose. Licensed under the MIT License.  
+Official Website: [rheehose.com](https://rheehose.com)
