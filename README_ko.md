@@ -2,9 +2,12 @@
 
 # <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/26a0.svg" width="28" height="28"> 절대 주의 및 면책사항 / EXTREME DANGER & DISCLAIMER
 
-[![PyPI version](https://img.shields.io/pypi/v/sibal.svg)](https://pypi.org/project/sibal/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python versions](https://img.shields.io/pypi/pyversions/sibal.svg)](https://pypi.org/project/sibal/)
+[![PyPI version](https://img.shields.io/pypi/v/sibal.svg?style=flat-square)](https://pypi.org/project/sibal/)
+[![Python versions](https://img.shields.io/pypi/pyversions/sibal.svg?style=flat-square)](https://pypi.org/project/sibal/)
+[![Downloads](https://img.shields.io/pypi/dm/sibal.svg?style=flat-square)](https://pypi.org/project/sibal/)
+[![License: MIT](https://img.shields.io/pypi/l/sibal.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/v/release/hslcrb/pypack_sibal.svg?style=flat-square)](https://github.com/hslcrb/pypack_sibal/releases)
+[![GitHub stars](https://img.shields.io/github/stars/hslcrb/pypack_sibal.svg?style=social)](https://github.com/hslcrb/pypack_sibal/stargazers)
 
 > **<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6a8.svg" width="20" height="20"> 물리적/건강 경고 (Physical & Health Warning):**  
 > 1. **심장 질환 및 노약자 주의**: 본 패키지는 예고 없이 극도로 날카롭고 시끄러운 소음을 발생시킵니다. 심장 질환자, 임산부, 노약자 및 고혈압 환자는 절대 사용하지 마십시오.  
