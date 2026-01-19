@@ -1,8 +1,9 @@
-# ⚠️ DISCLAIMER: This package is for prank and stress testing purposes only.
-# The creator is not responsible for any noise, visual stimuli, or resulting physical/mental damage.
-# Use at your own risk. DO NOT use in public places.
-# 면책사항: 이 패키지는 장난 및 스트레스 테스트 목적으로 제작되었습니다.
-# 발생하는 소음, 시각적 자극 및 이로 인한 피해에 대해 제작자는 책임을 지지 않습니다.
+# ⚠️ EXTREME HEALTH HAZARD & DANGER: 
+# 1. HEART CONDITION: Sudden extreme noise may cause heart failure. DO NOT use if you have any heart issues.
+# 2. PHOTOSENSITIVE EPILEPSY: Rapid flashing colors may trigger seizures.
+# 3. HEARING LOSS: High volume siren may damage hearing.
+# 면책사항: 심장 질환, 광과민성 발작, 청력 손상 등 모든 물리적/정신적 피해에 대해 제작자는 책임을 지지 않습니다.
+# 사용 시 생명에 위협이 될 수 있으므로 절대 주의하십시오.
 
 import sys
 import os
