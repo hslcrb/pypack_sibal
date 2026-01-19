@@ -1,3 +1,9 @@
+# ⚠️ DISCLAIMER: This package is for prank and stress testing purposes only.
+# The creator is not responsible for any noise, visual stimuli, or resulting physical/mental damage.
+# Use at your own risk. DO NOT use in public places.
+# 면책사항: 이 패키지는 장난 및 스트레스 테스트 목적으로 제작되었습니다.
+# 발생하는 소음, 시각적 자극 및 이로 인한 피해에 대해 제작자는 책임을 지지 않습니다.
+
 import sys
 import os
 import time

@@ -1,3 +1,6 @@
+# ⚠️ DISCLAIMER: For prank/stress testing only. Use at your own risk.
+# 면책사항: 장난 및 테스트용 패키지입니다. 사용 시 주의하십시오.
+
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"

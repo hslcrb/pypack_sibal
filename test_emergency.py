@@ -1,3 +1,5 @@
+# ⚠️ WARNING: RUNNING THIS WILL TRIGGER LOUD NOISE AND FLASHING TEXT.
+# 경고: 실행 시 강력한 소음과 시각적 자극이 발생합니다.
 import sibal
 import time
 
