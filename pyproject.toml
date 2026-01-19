@@ -22,3 +22,6 @@ Homepage = "https://github.com/rheehose/pypack_sibal"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+sibal = ["*.wav"]

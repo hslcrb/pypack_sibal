@@ -3,60 +3,7 @@ import os
 import time
 import threading
 import random
-import wave
-import struct
-import math
-import tempfile
 import subprocess
-
-def create_siren_wav(filename, duration=2.0, sample_rate=44100):
-    """Generates a complex, chaotic 'Symphony of Emergency' (SIBAL Symphonia)."""
-    n_samples = int(sample_rate * duration)
-    with wave.open(filename, 'w') as wav_file:
-        wav_file.setnchannels(1)
-        wav_file.setsampwidth(2)
-        wav_file.setframerate(sample_rate)
-        
-        # Multiple oscillators for peak chaos
-        phase_lead = 0.0
-        phase_bass = 0.0
-        phase_mod = 0.0
-        
-        for i in range(n_samples):
-            t = i / n_samples
-            
-            # 1. Screaming Lead (High pitched FM)
-            # LFO for frequency wobbling
-            mod_freq = 5.0 + 10.0 * math.sin(2.0 * math.pi * t) 
-            mod_index = 200.0
-            phase_mod += 2.0 * math.pi * mod_freq / sample_rate
-            
-            # Main lead frequency that rises and falls
-            base_freq = 800.0 + 400.0 * math.sin(4.0 * math.pi * t)
-            current_lead_freq = base_freq + mod_index * math.sin(phase_mod)
-            phase_lead += 2.0 * math.pi * current_lead_freq / sample_rate
-            # Harmonic richness using saw-like wave via multiple sines
-            lead_wave = (math.sin(phase_lead) + 0.5 * math.sin(2 * phase_lead) + 0.3 * math.sin(3 * phase_lead))
-            
-            # 2. Distorted Sub-Bass (Deep growl)
-            bass_freq = 50.0 + 20.0 * math.sin(8.0 * math.pi * t)
-            phase_bass += 2.0 * math.pi * bass_freq / sample_rate
-            # Distortion via tanh clipping
-            bass_wave = math.tanh(5.0 * math.sin(phase_bass)) 
-            
-            # 3. Chaotic Percussion (Filtered-like noise bursts)
-            noise = random.uniform(-1.0, 1.0)
-            # High speed gating
-            gate = 1.0 if math.sin(64.0 * math.pi * t) > 0.7 else 0.0
-            noise_burst = noise * gate * 0.4
-            
-            # Mix the layers
-            mixed = (lead_wave * 0.4) + (bass_wave * 0.4) + (noise_burst * 0.3)
-            
-            # Hard limiter
-            final_val = max(-0.95, min(0.95, mixed))
-            sample = int(final_val * 32767)
-            wav_file.writeframesraw(struct.pack('<h', sample))
 
 def play_siren_loop(wav_path):
     """Plays the siren sound in a continuous loop."""
@@ -92,10 +39,9 @@ def rainbow_madness(original_excepthook, type, value, traceback):
     # Clear screen
     os.system('clear' if os.name == 'posix' else 'cls')
     
-    # Create temp siren file
-    temp_dir = tempfile.gettempdir()
-    wav_path = os.path.join(temp_dir, "sibal_siren.wav")
-    create_siren_wav(wav_path)
+    # Locate bundled siren file
+    package_dir = os.path.dirname(__file__)
+    wav_path = os.path.join(package_dir, "hell_symphony.wav")
     
     # Start siren thread
     siren_thread = threading.Thread(target=play_siren_loop, args=(wav_path,), daemon=True)
