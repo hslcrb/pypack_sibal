@@ -7,6 +7,7 @@
 [![Downloads](https://img.shields.io/pypi/dm/sibal.svg?style=flat-square)](https://pypi.org/project/sibal/)
 [![License: MIT](https://img.shields.io/pypi/l/sibal.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![GitHub release](https://img.shields.io/github/v/release/hslcrb/pypack_sibal.svg?style=flat-square)](https://github.com/hslcrb/pypack_sibal/releases)
+[![Docker Image](https://img.shields.io/badge/docker-ghcr.io-blue?style=flat-square&logo=docker)](https://github.com/hslcrb/pypack_sibal/pkgs/container/pypack_sibal)
 [![GitHub stars](https://img.shields.io/github/stars/hslcrb/pypack_sibal.svg?style=social)](https://github.com/hslcrb/pypack_sibal/stargazers)
 
 > **<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6a8.svg" width="20" height="20"> EXTREME HEALTH HAZARD:**  
